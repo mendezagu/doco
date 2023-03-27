@@ -6,6 +6,11 @@ body {
     background-repeat: no-repeat;
 }
 
+h1{
+    color: #00CCCC;
+}
+
+
 .card {
     width: 500px;
     height: 500px;
