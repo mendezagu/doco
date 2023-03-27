@@ -9,7 +9,7 @@ tener instalado Django (comando de instalacion: pip install django)
 utilizar el comando "python manage.py runserver" (este comando compila la aplicacion y lo levanta en el puerto http://127.0.0.1:8000/ por defecto
 
 #SUPERUSUARIO
-La app cuenta con un SUPERUSUARIO que nos permite ingresar a la base de datos desde el directorio "http://127.0.0.1:8000/admin"
+La app cuenta con un SUPERUSUARIO (username: mendezag password: Agus280894) que nos permite ingresar a la base de datos desde el directorio "http://127.0.0.1:8000/admin"
 
 #NUEVO SUEPERUSUARIO
 
