@@ -12,8 +12,8 @@ def registrarUsuario(request):
     telefono = request.POST['txtTelefono']
     documento = request.POST['txtDocumento']
     direccion = request.POST['txtDireccion']
-    menorNombre = request.POST['txtApellidoMenor']
-    menorApellido = request.POST['txtTelefono']
+    menorNombre = request.POST['txtNombreMenor']
+    menorApellido = request.POST['txtApellidoMenor']
     parentesco = request.POST['txtParentesco']
     fecha_nacimientoMenor = request.POST['txtFeNacimiento']
 
@@ -34,5 +34,5 @@ def registrarUsuario(request):
         )
     
 
-    messages.success(request, '¡Cliente registrado!')
+    messages.success(request, '¡Cliente registrado correctamente!')
     return redirect('/')
