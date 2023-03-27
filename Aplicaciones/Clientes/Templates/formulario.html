@@ -8,12 +8,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
     crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
   
 </head>
-<body>
 
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <img src="/static/image/logo_docokids.svg" alt="doco-img">
+    </div>
+  </nav>
+<body>
     <!--FORMULARIO PARA CLIENTE------------------------------------------------------------------------->
-    <h1>Registro del Adulto</h1>
+    <h1>Datos del Adulto</h1>
 
     <div class="card">
         <div class="card-body">
@@ -22,56 +29,61 @@
                     <input type="text" id="txtCodigo" name="txtNombre" class="form-control" placeholder="Nombre"
                         minlength="1" maxlength="50" required>
                 </div>
-                <div class="form-group">
-                    <input type="text" id="txtApellido" name="txtApellido" class="form-control" placeholder="Apellido"
+                <div class="form_background">
+
+                    <div class="form-group">
+                        <input type="text" id="txtApellido" name="txtApellido" class="form-control" placeholder="Apellido"
+                            minlength="1" maxlength="50" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtEmail" name="txtEmail" class="form-control" placeholder="Email"
                         minlength="1" maxlength="50" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="txtEmail" name="txtEmail" class="form-control" placeholder="Email"
-                    minlength="1" maxlength="50" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="txTelefono" name="txtTelefono" class="form-control" placeholder="Telefono"
-                    minlength="1" maxlength="50" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="txtDocumento" name="txtDocumento" class="form-control" placeholder="Documento"
-                    minlength="1" maxlength="50" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="txtDireccion" name="txtDireccion" class="form-control" placeholder="Direccion"
-                    minlength="1" maxlength="50" required>
-                </div>
-
-                <!--FORMULARIO PARA  EL MENOR-------------------------------------------------------------------->
-
-                <h1>Datos del Menor</h1>
-
-                <div class="form-group">
-                    <input type="text" id="txtNombreMenor" name="txtNombreMenor" class="form-control" placeholder="Nombre"
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txTelefono" name="txtTelefono" class="form-control" placeholder="Telefono"
                         minlength="1" maxlength="50" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="txtApellidoMenor" name="txtApellidoMenor" class="form-control" placeholder="Apellido"
-                    minlength="1" maxlength="50" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="txtParentesco" name="txtParentesco" class="form-control" placeholder="Parentesco"
-                    minlength="1" maxlength="50" required>
-                </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtDocumento" name="txtDocumento" class="form-control" placeholder="Documento"
+                        minlength="1" maxlength="50" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtDireccion" name="txtDireccion" class="form-control" placeholder="Direccion"
+                        minlength="1" maxlength="50" required>
+                    </div>
     
-                <div class="form-group">
-                    <input type="text" id="txtFeNacimiento" name="txtFeNacimiento" class="form-control" placeholder="Fecha de nacimiento"
-                    minlength="1" maxlength="50" required>
-                </div>
-            
-                <div class="form-group">
-                    <button type="submit" class="btn btn-success btn-block text-white">Guardar</button>
-                </div>
-            </form>
+                    <!--FORMULARIO PARA  EL MENOR-------------------------------------------------------------------->
+    
+                    <h1>Datos del Menor</h1>
+    
+                    <div class="form-group">
+                        <input type="text" id="txtNombreMenor" name="txtNombreMenor" class="form-control" placeholder="Nombre"
+                            minlength="1" maxlength="50" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtApellidoMenor" name="txtApellidoMenor" class="form-control" placeholder="Apellido"
+                        minlength="1" maxlength="50" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtParentesco" name="txtParentesco" class="form-control" placeholder="Parentesco"
+                        minlength="1" maxlength="50" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <input type="text" id="txtFeNacimiento" name="txtFeNacimiento" class="form-control" placeholder="Fecha de nacimiento"
+                        minlength="1" maxlength="50" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success btn-block text-white">Guardar</button>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
-    </div>
+        </div>
+
+        </div>
+                
         
 {% if messages %}
 {% for message in messages %}

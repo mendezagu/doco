@@ -1,0 +1,23 @@
+body {
+    background-image: url('../image/fondo.avif');
+    /* ajusta los siguientes valores a tus necesidades */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.5); /* valor "rgba" con alfa = 0.5 */
+}
+
+.form-control{
+    background-color: rgba(255, 255, 255, 0.5); /* valor "rgba" con alfa = 0.5 */
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+
