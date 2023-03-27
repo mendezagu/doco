@@ -10,7 +10,7 @@ class Clientes(models.Model):
     parentesco = models.CharField(max_length=100)
     menorNombre = models.CharField(max_length=100)
     menorApellido = models.CharField(max_length=100)
-    fecha_nacimientoMenor = models.DateField()
+    fecha_nacimientoMenor = models.CharField(max_length=100)
     
     def __str__(self):
         return f"{self.nombre} {self.apellido}"
